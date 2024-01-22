@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package businesstour;
 
 
@@ -18,11 +15,22 @@ public class Pola {
     double czynsz_2_dom ;
     double czynsz_3_dom;
     double czynsz_hotel;
+    Gracz wlasciciel;
+    int stopien_rozbudowy=0;
     public Pola (){}
 
     Pola(String nazwa_pola, int koszt_kupna_pola, int koszt_1_domu, int koszt_2_domow, int koszt_3_domow, int koszt_hotelu, double czynsz_pole, double czynsz_1_dom, double czynsz_2_dom, double czynsz_3_dom, double czynsz_hotel) {
         this.nazwa_pola = nazwa_pola;
         this.koszt_kupna_pola = koszt_kupna_pola;
+        this.koszt_1_domu = koszt_1_domu;
+        this.koszt_2_domow = koszt_2_domow;
+        this.koszt_3_domow = koszt_3_domow;
+        this.koszt_hotelu = koszt_hotelu;
+        this.czynsz_pole = czynsz_pole;
+        this.czynsz_1_dom = czynsz_1_dom;
+        this.czynsz_2_dom = czynsz_2_dom;
+        this.czynsz_3_dom = czynsz_3_dom;
+        this.czynsz_hotel = czynsz_hotel;
     }
     public String nazwa_pola(){
     return this.nazwa_pola;
