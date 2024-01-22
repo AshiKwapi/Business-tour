@@ -1,0 +1,22 @@
+package businesstour;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Gracz {
+
+    String nazwa_gracza;
+    int pozycja_gracza = 0;
+    double majatek = 2000;
+    List<Pola> posiadlosci = new LinkedList<>();
+    int liczba_plaz = 0;
+
+    public Gracz(String nazwa_gracza) {
+        this.nazwa_gracza = nazwa_gracza;
+    }
+
+    @Override
+    public String toString() {
+        return nazwa_gracza;
+    }
+}
